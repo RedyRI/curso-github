@@ -6,7 +6,7 @@ git commit -m 'some message' // to commit a change
 git rm --cached <filename> // to remove a file from the staging area 
 git show // use this command to show the last changes in your proyect
 git diff <commit id1> <commit id2> // to compare two versions of the project, in the id2 space put the last version you want conpare to
-
+history // use this command to show all the commands that have been inserted into the bash
 git reset <commit id> --hard/--soft // to getback to especific version of our code, be carefull with the flag, a soft reset takes us back to a especific version but keeps our staging area in its actuall state, while a hard reset makes everything go a way and also when we do git log all the commits made after the version of the project we are going baskto, are deleted as well, so be carefull with this command
 
 git log --stat // allow us to see all the changes along the history of the project in a very light way
@@ -30,3 +30,6 @@ alias arbolito="git log --all --graph --decorate --oneline" // now wen we run ar
 
 to add tag in our project (we can use this tags to separate important changes to our code, that can work as versions of our projct), using the followig command
 git tag -a ##a stands for add## v0.1 -m '<insert a menainfull message here>' <insert here a hash of the commit you want to add the tag to>
+
+git tag // to show a list of the tags that we have created
+git show-ref --tags // also shows a list of tags but addig more info this time, in this case also adds the hash related to the commit
