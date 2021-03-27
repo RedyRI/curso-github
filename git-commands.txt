@@ -35,3 +35,4 @@ git tag // to show a list of the tags that we have created
 git show-ref --tags // also shows a list of tags but addig more info this time, in this case also adds the hash related to the commit
 
 git push origin --tags // use this command to push the tags that we saved to the remote repo
+
