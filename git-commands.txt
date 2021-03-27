@@ -21,3 +21,12 @@ git pull origin main // use this comand to get the latest version of a branch fr
 git pull origin master --allow-unrelated-histories //use this flag to allow unrelated histories(a group of commits)
 
 to work from different devices (pcs ow laptops) you have to add the necesary ssh keys to your repo, then clone, or add a remote origin pointing to the ssh repo url, then pull to be up to date, if there is unrelated histories, use the adecuated command to allow unrelated histories, then now you are able now to push changes to your repo
+
+git log --all --graph --decorate --oneline // to see all the commits history in a compact mode
+
+as a trick from the linux world we can set aliases to certain commands like for example we can set an alias for the last command as follows:
+
+alias arbolito="git log --all --graph --decorate --oneline" // now wen we run arbolito on the bash, it runs all the command it alias belong to
+
+to add tag in our project (we can use this tags to separate important changes to our code, that can work as versions of our projct), using the followig command
+git tag -a ##a stands for add## v0.1 -m '<insert a menainfull message here>' <insert here a hash of the commit you want to add the tag to>
