@@ -15,3 +15,7 @@ git log --stat // allow us to see all the changes along the history of the proje
 git checkout <commit id> <filename> //let us see a certain file in a certain version of theproject, need to be carefull here because by doing this, our file with the same name of <filename> in our actual version gets overwritten, so to just see the change, use this command, but the do ** git checkout master <filename>, to go back to our actual version of our filename 
 
 git remote add origin <the path to the remote repository> // use this command to add a remote origin to your project, this is the way to link your local repo that you have been working on, and upload it to a remote repo
+
+git pull origin main // use this comand to get the latest version of a branch from github
+
+git pull origin master --allow-unrelated-histories //use this flag to allow unrelated histories(a group of commits)
