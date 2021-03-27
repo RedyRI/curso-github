@@ -17,6 +17,7 @@
 }
 
 .container p {
+  color: red;
   font-family: 'Courier New', Courier, monospace;
   font-family: Arial, Helvetica, sans-serif;
   margin: 17px;
