@@ -19,3 +19,5 @@ git remote add origin <the path to the remote repository> // use this command to
 git pull origin main // use this comand to get the latest version of a branch from github
 
 git pull origin master --allow-unrelated-histories //use this flag to allow unrelated histories(a group of commits)
+
+to work from different devices (pcs ow laptops) you have to add the necesary ssh keys to your repo, then clone, or add a remote origin pointing to the ssh repo url, then pull to be up to date, if there is unrelated histories, use the adecuated command to allow unrelated histories, then now you are able now to push changes to your repo
