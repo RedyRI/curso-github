@@ -19,3 +19,14 @@
 .container p {
   font-family: 'Courier New', Courier, monospace;
 }
+
+.header {
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.header h1 span {
+  color: lightgray;
+}
