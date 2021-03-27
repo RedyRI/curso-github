@@ -1,0 +1,15 @@
+git beginner comands: 
+git config --list // to see the configuration
+git config --list --show-origin // to see where the configuration is saved
+git add -A // to add the changes to the staging area
+git commit -m 'some message' // to commit a change
+git rm --cached <filename> // to remove a file from the staging area 
+git show // use this command to show the last changes in your proyect
+git diff <commit id1> <commit id2> // to compare two versions of the project, in the id2 space put the last version you want conpare to
+
+git reset <commit id> --hard/--soft // to getback to especific version of our code, be carefull with the flag, a soft reset takes us back to a especific version but keeps our staging area in its actuall state, while a hard reset makes everything go a way and also when we do git log all the commits made after the version of the project we are going baskto, are deleted as well, so be carefull with this command
+
+git log --stat // allow us to see all the changes along the history of the project in a very light way
+*Hint: the (head --> main) of our log history means that we are actually in the head(last) version of our project and we are actually in the main branch
+
+git checkout <commit id> <filename> //let us see a certain file in a certain version of theproject, need to be carefull here because by doing this, our file with the same name of <filename> in our actual version gets overwritten, so to just see the change, use this command, but the do ** git checkout master <filename>, to go back to our actual version of our filename 
