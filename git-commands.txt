@@ -36,3 +36,6 @@ git show-ref --tags // also shows a list of tags but addig more info this time, 
 
 git push origin --tags // use this command to push the tags that we saved to the remote repo
 
+git tag -d <tag name> // by this you delete a tag in your local repo but if you have already pushed this tag to your repo, it won't be deleted from  the remote repo because it is taken as references for the project
+
+git push origin :refs/tags/<tag name> // use this command to delete the tag in the remote repo
